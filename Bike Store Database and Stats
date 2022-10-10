@@ -1,0 +1,13 @@
+-- Create a bike store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, sold INTEGER, aisle INTEGER, size INTEGER);
+
+INSERT INTO store VALUES (1, "Trek", 5, 3, 26);
+INSERT INTO store VALUES (2, "Baum", 4, 1, 24);
+INSERT INTO store VALUES (3, "Civia", 1, 2, 26);
+INSERT INTO store VALUES (4, "Firefly", 3, 4, 24);
+INSERT INTO store VALUES (5, "Gios", 2, 5, 20);
+
+--show brands that sold more than two bikes
+SELECT * FROM store WHERE sold > 2 ORDER BY sold;
+
